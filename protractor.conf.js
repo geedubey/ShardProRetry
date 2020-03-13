@@ -8,7 +8,7 @@ exports.config = {
   allScriptsTimeout: 11000,
   specs: ['./e2e/*.js'],   
   directConnect: true,  
-  chromeDriver: './node_modules/chromedriver/lib/chromedriver/chromedriver.exe',
+  chromeDriver: process.platform === "win32"? './node_modules/chromedriver/lib/chromedriver/chromedriver.exe' : './node_modules/chromedriver/lib/chromedriver/chromedriver',
   capabilities: {
     'browserName': 'chrome',
     'shardTestFiles': true,
