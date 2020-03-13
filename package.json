@@ -1,0 +1,22 @@
+{
+  "name": "testpro",
+  "version": "1.0.0",
+  "description": "testprotractor",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor protractor.conf.js && npx junit-merge -d testresults -o testresults/combined.xml",
+    "e2e": "protractor protractor.conf.js"
+  },
+  "author": "gangadhar",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^2.41.0",
+    "junit-merge": "^2.0.0",
+    "protractor": "^5.4.0",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "puppeteer": "^1.7.0",
+    "jasmine-reporters": "^2.0.0",
+    "protractor-beautiful-reporter": "^1.3.6",
+    "protractor-retry": "^1.2.11"
+  }
+}
